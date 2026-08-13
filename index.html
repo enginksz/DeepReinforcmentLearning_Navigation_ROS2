@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Era Driver - Otonom Robot Navigasyonu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">Era<span class="logo-highlight">Driver</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#features">Özellikler</a></li>
+                <li><a href="#technology">Teknoloji</a></li>
+                <li><a href="#architecture">Mimari</a></li>
+                <li><a href="#installation">Kurulum</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse"></span>
+                Yapay Zeka Destekli
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Era Driver</span>
+                <br>
+                Otonom Robot Navigasyonu
+            </h1>
+            <p class="hero-description">
+                Derin Pekiştirmeli Öğrenme (DRL) ile geliştirilmiş, TD3 algoritması kullanan 
+                akıllı mobil robot navigasyon sistemi. Karmaşık ortamlarda engelleri algılayarak 
+                hedefe güvenli şekilde ulaşır.
+            </p>
+            <div class="hero-buttons">
+                <a href="#installation" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Kuruluma Başla
+                </a>
+                <a href="#technology" class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polygon points="10 8 16 12 10 16 10 8"/>
+                    </svg>
+                    Nasıl Çalışır?
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">TD3</span>
+                    <span class="stat-label">Algoritma</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">ROS2</span>
+                    <span class="stat-label">Framework</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24</span>
+                    <span class="stat-label">Girdi Boyutu</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Aksiyon</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="robot-animation">
+                <div class="orbit orbit-1">
+                    <div class="particle"></div>
+                </div>
+                <div class="orbit orbit-2">
+                    <div class="particle"></div>
+                </div>
+                <div class="orbit orbit-3">
+                    <div class="particle"></div>
+                </div>
+                <div class="robot-core">
+                    <span>🤖</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Özellikler</span>
+                <h2 class="section-title">Neden Era Driver?</h2>
+                <p class="section-description">
+                    Modern yapay zeka teknolojileri ile donatılmış, güvenilir ve verimli navigasyon çözümü
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Derin Öğrenme</h3>
+                    <p>Twin Delayed Deep Deterministic Policy Gradient (TD3) algoritması ile güçlendirilmiş yapay sinir ağları</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v10"/>
+                            <path d="M21 12h-6m-6 0H1"/>
+                            <path d="M18.36 5.64l-4.24 4.24m-4.24 4.24l-4.24 4.24"/>
+                            <path d="M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24"/>
+                        </svg>
+                    </div>
+                    <h3>Engel Algılama</h3>
+                    <p>LiDAR ve sensör verileri ile gerçek zamanlı engel tespiti ve kaçınma stratejileri</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3>Hedef Takibi</h3>
+                    <p>Dinamik ortamlarda rastgele hedef noktalarına güvenli ve optimize edilmiş rota planlaması</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Simülasyon Ortamı</h3>
+                    <p>ROS2 ve Gazebo ile entegre edilmiş gerçekçi simülasyon ortamında eğitim ve test</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3>Sürekli Kontrol</h3>
+                    <p>Öteleme ve açısal hız için sürekli aksiyon uzayı ile hassas hareket kontrolü</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 20V10"/>
+                            <path d="M12 20V4"/>
+                            <path d="M6 20v-6"/>
+                        </svg>
+                    </div>
+                    <h3>Kararlı Öğrenme</h3>
+                    <p>Çift kritik ağ ve gecikmeli güncelleme ile aşırı tahmin sapmasını önleyen stabil eğitim</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="tech-content">
+                <div class="tech-text">
+                    <span class="section-tag">Teknoloji</span>
+                    <h2 class="section-title">Derin Pekiştirmeli Öğrenme</h2>
+                    <p>
+                        Derin Pekiştirmeli Öğrenme, pekiştirmeli öğrenme ve derin öğrenmeyi birleştirerek 
+                        ajanların karmaşık ortamlarda optimal politikalar öğrenmesini sağlar.
+                    </p>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-item-header">
+                                <span class="tech-number">01</span>
+                                <h4>Policy Gradient</h4>
+                            </div>
+                            <p>Politika fonksiyonunu doğrudan optimize ederek ajanın davranışını belirler. Beklenen kümülatif ödülü maksimize etmeyi hedefler.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-header">
+                                <span class="tech-number">02</span>
+                                <h4>Deterministic Policy Gradient</h4>
+                            </div>
+                            <p>Her durum için belirli bir aksiyon çıktısı veren deterministik politika. Sürekli aksiyon uzayları için idealdir.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-header">
+                                <span class="tech-number">03</span>
+                                <h4>DDPG</h4>
+                            </div>
+                            <p>Aktör ve kritik ağlarını derin sinir ağları ile yaklaştırarak DPG'yi genişletir. Aktör aksiyonu, kritik değeri değerlendirir.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-header">
+                                <span class="tech-number">04</span>
+                                <h4>TD3</h4>
+                            </div>
+                            <p>Çift Q-öğrenme, gecikmeli güncellemeler ve hedef politika yumuşatma ile DDPG'nin sınırlamalarını aşar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-visual">
+                    <div class="formula-box">
+                        <h4>TD3 Formülasyonu</h4>
+                        <div class="formula">
+                            <span class="formula-label">Clipped Double Q-Learning:</span>
+                            <code>Q(s, a) = min(Q₁(s, a), Q₂(s, a))</code>
+                        </div>
+                        <div class="formula">
+                            <span class="formula-label">Policy Gradient:</span>
+                            <code>∇J(θ) ≈ 𝔼[∇log π_θ(aₜ|sₜ) Q_w(sₜ, aₜ)]</code>
+                        </div>
+                        <div class="formula">
+                            <span class="formula-label">Deterministic Policy:</span>
+                            <code>aₜ = μ_θ(sₜ)</code>
+                        </div>
+                    </div>
+                    <div class="tech-features">
+                        <div class="tech-feature">
+                            <span class="check-icon">✓</span>
+                            Aşırı tahmin sapmasını azaltır
+                        </div>
+                        <div class="tech-feature">
+                            <span class="check-icon">✓</span>
+                            Daha kararlı Q-değer tahminleri
+                        </div>
+                        <div class="tech-feature">
+                            <span class="check-icon">✓</span>
+                            Eğitim sırasında sağlamlık
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Mimari</span>
+                <h2 class="section-title">Ağ Yapısı</h2>
+                <p class="section-description">
+                    TD3 algoritmasının aktör-kritik mimarisi ile güçlü ve kararlı öğrenme
+                </p>
+            </div>
+            <div class="architecture-content">
+                <div class="arch-image">
+                    <img src="drl_nav.png" alt="TD3 Ağ Mimarisi">
+                </div>
+                <div class="arch-details">
+                    <div class="arch-card">
+                        <div class="arch-card-icon">📥</div>
+                        <h4>Durum Girdisi</h4>
+                        <p>Robotun çevre durumu, sensör okumaları (24 boyutlu girdi vektörü) ağa beslenir.</p>
+                    </div>
+                    <div class="arch-card">
+                        <div class="arch-card-icon">🎭</div>
+                        <h4>Aktör Ağı</h4>
+                        <p>FC 800 → FC 600 → FC 2 katmanları ile sürekli aksiyonlar (öteleme ve açısal hız) üretir.</p>
+                    </div>
+                    <div class="arch-card">
+                        <div class="arch-card-icon">⚖️</div>
+                        <h4>Kritik Ağları</h4>
+                        <p>İki ayrı kritik ağ (Q1 ve Q2) aksiyon-değer fonksiyonunu değerlendirir ve minimum Q-değerini seçer.</p>
+                    </div>
+                    <div class="arch-card">
+                        <div class="arch-card-icon">🎯</div>
+                        <h4>TD3 İyileştirmeleri</h4>
+                        <p>Çift kritik ağ, gecikmeli güncellemeler ve hedef politika yumuşatma ile kararlı öğrenme.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation" class="installation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kurulum</span>
+                <h2 class="section-title">Hızlı Başlangıç</h2>
+                <p class="section-description">
+                    Era Driver'ı sisteminize kurmak ve çalıştırmak için aşağıdaki adımları izleyin
+                </p>
+            </div>
+            <div class="installation-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Projeyi Derleyin</h4>
+                        <p>Proje dizinine gidin ve colcon ile derleyin</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>Terminal</span>
+                                <button class="copy-btn" onclick="copyCode(this)">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                    </svg>
+                                    Kopyala
+                                </button>
+                            </div>
+                            <pre><code>cd DeepReinforcmentLearning_Navigation_ROS2
+colcon build</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Ortamı Kaynak Edin</h4>
+                        <p>ROS2 workspace'ini aktif edin</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>Terminal</span>
+                                <button class="copy-btn" onclick="copyCode(this)">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                    </svg>
+                                    Kopyala
+                                </button>
+                            </div>
+                            <pre><code>source install/setup.bash</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Eğitim Simülasyonunu Başlatın</h4>
+                        <p>Modeli eğitmek için simülasyonu çalıştırın</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>Terminal</span>
+                                <button class="copy-btn" onclick="copyCode(this)">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                    </svg>
+                                    Kopyala
+                                </button>
+                            </div>
+                            <pre><code>ros2 launch td3 training_simulation.launch.py</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Test Simülasyonunu Başlatın</h4>
+                        <p>Eğitilmiş modeli test edin</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>Terminal</span>
+                                <button class="copy-btn" onclick="copyCode(this)">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                    </svg>
+                                    Kopyala
+                                </button>
+                            </div>
+                            <pre><code>ros2 launch td3 test_simulation.launch.py</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-tag">İletişim</span>
+                    <h2 class="section-title">Bizimle İletişime Geçin</h2>
+                    <p>
+                        Era Driver hakkında sorularınız mı var? Projemize katkıda bulunmak mı istiyorsunuz? 
+                        Bize ulaşın, size yardımcı olmaktan mutluluk duyarız.
+                    </p>
+                    <div class="contact-links">
+                        <a href="https://github.com" class="contact-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="mailto:info@eradriver.com" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            E-posta
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">İsim</label>
+                            <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta</label>
+                            <input type="email" id="email" name="email" placeholder="ornek@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesaj</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Mesajınızı yazın..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Gönder
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🤖</span>
+                        <span class="logo-text">Era<span class="logo-highlight">Driver</span></span>
+                    </a>
+                    <p>Derin Pekiştirmeli Öğrenme ile Otonom Robot Navigasyonu</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigasyon</h4>
+                        <ul>
+                            <li><a href="#home">Ana Sayfa</a></li>
+                            <li><a href="#features">Özellikler</a></li>
+                            <li><a href="#technology">Teknoloji</a></li>
+                            <li><a href="#architecture">Mimari</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kaynaklar</h4>
+                        <ul>
+                            <li><a href="#installation">Kurulum</a></li>
+                            <li><a href="#">Dokümantasyon</a></li>
+                            <li><a href="#">API Referansı</a></li>
+                            <li><a href="#">Örnekler</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>İletişim</h4>
+                        <ul>
+                            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="mailto:info@eradriver.com">E-posta</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Era Driver. Tüm hakları saklıdır.</p>
+                <p>TD3 Algoritması ile Geliştirilmiştir</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
